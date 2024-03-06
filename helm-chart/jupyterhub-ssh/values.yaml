@@ -33,7 +33,7 @@ ssh:
 
   image:
     repository: quay.io/jupyterhub-ssh/ssh
-    tag: "set-by-chartpress"
+    tag: 0.0.1-0.dev.git.149.he5107a4
     pullPolicy: ""
 
   service:
@@ -55,7 +55,7 @@ ssh:
   networkPolicy: {}
 
 sftp:
-  enabled: true
+  enabled: false
   replicaCount: 1
 
   pvc:
@@ -64,7 +64,7 @@ sftp:
 
   image:
     repository: quay.io/jupyterhub-ssh/sftp
-    tag: "set-by-chartpress"
+    tag: 0.0.1-0.dev.git.142.h402a3d6
     pullPolicy: ""
 
   service:
